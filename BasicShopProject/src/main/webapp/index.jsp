@@ -93,6 +93,8 @@
 	 	 	<div class="col-md-12">
 				<div class="jumbotron">
 			  		<h1>Basic Shop</h1>
+			  		<p>기본적인 CRUD를 구현한 기본적인 쇼핑몰</p>
+			  		<br/>
 			  		<p>로그인 후 사용가능...</p>
 			  		<p>아이디가 없다면 회원가입 하세요.</p>
 			  		

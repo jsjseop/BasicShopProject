@@ -60,11 +60,11 @@ function fncAddProduct(){
 
 $(function(){
 	
-	$('button[type="button"]').on("click",function(){
+	$('button.btn.btn-primary').on("click",function(){
 		fncAddProduct();
 	});
 	
-	$('a[href="#"]').on("click",function(){
+	$('a.btn.btn-primary.btn').on("click",function(){
 		history.go(-1);
 	});
 	

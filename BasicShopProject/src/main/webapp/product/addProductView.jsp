@@ -59,7 +59,7 @@
 	
 	$(function(){
 		
-		$('.btn.btn-primary').on("click",function(){
+		$('button.btn.btn-primary').on("click",function(){
 			fncAddProduct();
 		});
 		
@@ -68,10 +68,11 @@
 		});
 		
 		$('#datepicker').datepicker({
-		    format: 'yyyy/mm/dd',
+		    format: 'yyyy-mm-dd',
 		    startDate: '-30d',
 		    language: 'kr',
-		    todayHighlight: 'true'
+		    todayHighlight: 'true',
+		    autoclose: 'true'
 		});
 	})
 

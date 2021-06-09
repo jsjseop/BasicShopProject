@@ -132,9 +132,9 @@
 
 	<div class="container">
 	
-		<div class="page-header text-info">
+		<div class="page-header text-default">
 			<c:if test="${ !empty menu && menu=='manage' }">
-				<h3>상품목록조회</h3>
+				<h3>상품관리</h3>
 			</c:if>
 			<c:if test="${ !empty menu && menu=='search' }">
 				<h3>상품검색</h3>
@@ -144,7 +144,7 @@
 	    <div class="row">
 	    
 		    <div class="col-md-6 text-left">
-		    	<p class="text-primary">
+		    	<p class="text-default">
 		    		전체  ${resultPage.totalCount } 건수, 현재 ${resultPage.currentPage}  페이지
 		    	</p>
 		    </div>
@@ -207,9 +207,12 @@
 				<tr>
 				  <td align="center">${ i }</td>
 				  <td align="left"  title="Click : 상품정보 확인">
-				  	<c:if test="${ product.proTranCode == null }">
-				  		<input type="hidden" value="${product.prodNo}">
-				  	</c:if>
+				  	<c:if test="${menu == 'search'}">
+					  	<c:if test="${ product.proTranCode == null }">
+					  		<input type="hidden" value="${product.prodNo}">
+					  	</c:if>
+					</c:if>
+					<input type="hidden" value="${product.prodNo}">
 				  	${product.prodName}
 				  </td>
 				  <td align="left">${product.price}</td>

@@ -21,7 +21,7 @@
 	<!--  ///////////////////////// CSS ////////////////////////// -->
 	<style>
        body > div.container{
-        	border: 3px solid #D6CDB7;
+        	border: 3px solid black;
             margin-top: 10px;
         }
     </style>
@@ -158,12 +158,11 @@
 
 <body>
 
-	<jsp:include page="/layout/toolbar.jsp" />
 
 	<!-- ToolBar Start /////////////////////////////////////-->
-	<div class="navbar  navbar-default">
+	<div class="navbar  navbar-inverse">
         <div class="container">
-        	<a class="navbar-brand" href="/index.jsp">Model2 MVC Shop</a>
+        	<a class="navbar-brand" href="/index.jsp">Basic Shop</a>
    		</div>
    	</div>
    	<!-- ToolBar End /////////////////////////////////////-->

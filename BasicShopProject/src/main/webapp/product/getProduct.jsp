@@ -26,7 +26,7 @@
             padding-top : 50px;
             padding-bottom : 30px;
         }
-     </style>
+    </style>
 	
 	<script type="text/javascript">
 			
@@ -40,7 +40,7 @@
 					window.history.back(-1);
 				})
 				
-				$("button.btn.btn-success").on("click", function(){
+				$("button.btn.btn-default").on("click", function(){
 					self.location = "/product/listProduct?menu=manage";
 				})
 			});
@@ -118,7 +118,7 @@
 				  		<a class="btn btn-primary btn" href="#" role="button">이&nbsp;전</a>
 					</c:when>
 					<c:otherwise>
-						<button type="button" class="btn btn-success"  >확&nbsp;인</button>
+						<button type="button" class="btn btn-default"  >확&nbsp;인</button>
 					</c:otherwise>
 				</c:choose>
 		    </div>

@@ -51,13 +51,14 @@
 			fncGetList(1);
 		});
 		
-		$("td:nth-child(3)").on("click",function(){
+		$("td:nth-child(2)").on("click",function(){
 			var userId = $(this).text().trim();
 			self.location = "/user/getUser?userId="+userId;
 		});
 		
-		$("td:nth-child(5)").on("click",function(){
-			
+		$("td:nth-child(3)").on("click",function(){
+			var tranNo = $(this).find("input").val();
+			self.location = "/purchase/getPurchase?tranNo="+tranNo;
 		});
 		
 		$("td:nth-child(11)").on("click",function(){
@@ -78,13 +79,13 @@
 	
 	<div class="container">
 	
-		<div class="page-header text-info">
+		<div class="page-header text-default">
 			<h3>판매완료상품</h3>
 	    </div>
 	    
 	    <div class="row">
 		    <div class="col-md-6 text-left">
-		    	<p class="text-primary">
+		    	<p class="text-default">
 		    		전체  ${resultPage.totalCount } 건수, 현재 ${resultPage.currentPage}  페이지
 		    	</p>
 		    </div>

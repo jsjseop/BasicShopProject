@@ -68,13 +68,13 @@
 
 	<div class="container">
 	
-		<div class="page-header text-info">
+		<div class="page-header text-default">
 			<h3>구매목록</h3>
 	    </div>
 	    
 	    <div class="row">
 		    <div class="col-md-6 text-left">
-		    	<p class="text-primary">
+		    	<p class="text-default">
 		    		전체  ${resultPage.totalCount } 건수, 현재 ${resultPage.currentPage}  페이지
 		    	</p>
 		    </div>
