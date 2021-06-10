@@ -102,12 +102,15 @@
 				}
 			}else if(${ menu.equals('manage') }){
 				var prodNo = $(this).find('input').val();
-				self.location = "/product/updateProduct?prodNo="+prodNo;
+				if(prodNo != null){
+					self.location = "/product/updateProduct?prodNo="+prodNo;
+				}else{
+					alert("판매가 완료되었습니다.");
+				}
 			}
 		})
 		
 		$("td:nth-child(5) > i").on("mouseover", function(){
-			
 			var prodNo = $(this).next().val();
 			ajaxGetProduct(prodNo);
 		});
@@ -207,12 +210,9 @@
 				<tr>
 				  <td align="center">${ i }</td>
 				  <td align="left"  title="Click : 상품정보 확인">
-				  	<c:if test="${menu == 'search'}">
-					  	<c:if test="${ product.proTranCode == null }">
-					  		<input type="hidden" value="${product.prodNo}">
-					  	</c:if>
-					</c:if>
-					<input type="hidden" value="${product.prodNo}">
+					  <c:if test="${ product.proTranCode == null }">
+					  	<input type="hidden" value="${product.prodNo}">
+					  </c:if>
 				  	${product.prodName}
 				  </td>
 				  <td align="left">${product.price}</td>

@@ -46,20 +46,7 @@
 				$("#userId").focus();
 			});
 			
-			$("#userId.form-control").on("keydown", function(event){
-				alert(event.keyCode);
-				//var userId = $(this).val();
-				
-				/* $.ajax( 
-						{
-							url : "/user/json/checkDuplication/"+userId ,
-							method : "GET" ,
-							dataType : "text" ,
-							success : function(Data , status) {
-								alert(status);
-							}
-					}); */
-			}
+			
 		});
 	
 	

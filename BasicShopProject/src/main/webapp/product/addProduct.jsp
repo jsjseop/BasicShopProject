@@ -35,11 +35,11 @@
 	<script type="text/javascript">
 		$(function(){
 			
-			$('a[href="#"]').on('click',function(){
+			$('a.btn.btn-primary.btn').on('click',function(){
 				self.location = "/product/listProduct?menu=manage";
 			});
 			
-			$('.btn.btn-primary').on('click',function(){
+			$('button.btn.btn-primary').on('click',function(){
 				self.location = "/product/addProduct";
 			});
 			
@@ -90,7 +90,7 @@
 		<div class="row">
 	  		<div class="col-xs-4 col-md-2 "><strong>상품이미지</strong></div>
 			<div class="col-xs-8 col-md-4">
-				<img src = "/images/uploadFiles/${ product.fileName }"/>
+				<img src="/images/uploadFiles/${ product.fileName }"/>
 			</div>
 		</div>
 		

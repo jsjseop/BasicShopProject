@@ -84,7 +84,6 @@
 	                     </ul>
 	                 </li>
 	                 
-	                 <li><a href="#">etc...</a></li>
 	             </ul>
 	             
 	             <ul class="nav navbar-nav navbar-right">

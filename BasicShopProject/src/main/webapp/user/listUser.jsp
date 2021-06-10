@@ -82,7 +82,7 @@
 		 $(function() {
 			 
 			//==> DOM Object GET 3가지 방법 ==> 1. $(tagName) : 2.(#id) : 3.$(.className)
-			$(  "td:nth-child(5) > i" ).on("click" , function() {
+			$(  "td:nth-child(5) > i" ).on("mouseover" , function() {
 
 					var userId = $(this).next().val();
 				
@@ -111,6 +111,10 @@
 						////////////////////////////////////////////////////////////////////////////////////////////
 					
 			});
+			
+			$(document).on("click",function(){
+				$('h6').remove();
+			})
 			
 			//==> userId LINK Event End User 에게 보일수 있도록 
 			//$( ".ct_list_pop td:nth-child(3)" ).css("color" , "red");

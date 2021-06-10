@@ -47,7 +47,7 @@
 			}
 		});
 		
-		$(".ct_btn01:contains('°Ë»ö')").on("click",function(){
+		$("button.btn.btn-default").on("click",function(){
 			fncGetList(1);
 		});
 		
@@ -61,7 +61,7 @@
 			self.location = "/purchase/getPurchase?tranNo="+tranNo;
 		});
 		
-		$("td:nth-child(11)").on("click",function(){
+		$("td:nth-child(6)").on("click",function(){
 			var prodNo = $(this).find("input").val();
 			self.location = "/purchase/deletePurchase?prodNo="+prodNo;
 		});
